@@ -36,7 +36,7 @@ begin
  wclk2 <= wclk1;
  end    
  
- assign pe = wclk & (~wclk2);
+ assign pe = wclk1 & (~wclk2);
  
  always @ (posedge pe)
  begin
